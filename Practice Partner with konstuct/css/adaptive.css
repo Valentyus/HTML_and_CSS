@@ -1,0 +1,263 @@
+/* HEADER */
+/* background */
+@media (max-width: 62em) {
+    .top-header-content {
+        height: 41em;
+    }
+}
+
+@media (max-width: 35em) {
+    .top-header-content {
+        height: 31em;
+    }
+}
+/* title */
+@media (max-width: 62em) {
+    .title h1 {
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .title h1 {
+        font-size: 2rem;
+    }
+    .title p {
+        font-size: 0.8rem;
+    }
+    .content-navigation {
+        height: 3rem;
+    }
+
+    /* меню бургер */
+    .navigation {
+        display: none;
+    }
+    .header-burger a {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    .header-burger a span {
+        position: absolute;
+        background-color: #48555B;
+        width: 30px;
+        height: 3px;
+        left: 0;
+        top: 8px;
+    }
+    .header-burger a::before,
+    .header-burger a::after {
+        content: "";
+        background-color: #48555B;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        left: 0;
+    }
+    .header-burger a::before {
+        top: 0px;
+    }
+    .header-burger a::after {
+        bottom: 0;
+    }
+}
+
+/* navigation */
+@media (max-width: 62em) {
+    .container {
+        max-width: 44rem;
+    }
+    .navigation {
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 48em) {
+    .container {
+        max-width: 26rem;
+    }
+}
+
+/* MAIN */
+/* block our story */
+@media (max-width: 62em) {
+    .fat-text {
+        font-size: 1.2rem;
+        line-height: 1.1;
+    }
+    .text {
+        line-height: 1.2;
+    }
+    .images-our-story {
+        flex-basis: 52%;
+    }
+    .images-our-story a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .our-management {
+        flex-wrap: wrap;
+    }
+    .text-our-story {
+        flex-basis: 100%;
+        height: 12rem;
+    }
+    .fat-text p{
+        text-align: center;
+    }
+    .text p {
+        margin-bottom: 1em;
+    }
+    .images-our-story {
+        flex-basis: 100%;
+    }
+    .images-our-story a {
+        background-position: top;
+        padding: 2rem 0 0 1rem;
+        height: 14em;
+    }
+    .our-story {
+        margin-bottom: 0;
+    }
+}
+
+/* block our capabilities */
+@media (max-width: 48em) {
+    .our-capabilities {
+        margin-top: 0;
+    }
+    .row-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .title-our-capabilities {
+        text-align: center;
+        line-height: 1.0;
+        margin-bottom: 1rem;
+    }
+    .title-our-capabilities h3::after {
+        top: 130%;
+        left: 36%;
+    }
+    .text-and-button {
+        flex-direction: column;
+        flex-basis: 84%;
+    }
+    .text-row-content p {
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    .columns-our-capabilities {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* block want to build */
+@media (max-width: 62em) {
+    .content-want-to-build {
+        height: 28rem;
+        justify-content: start;
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .title-want-to-build {
+        font-size: 1.4rem;
+        line-height: 1.0;
+    }
+    .content-want-to-build {
+        height: 28rem;
+        justify-content: start;
+        padding-top: 4rem;
+    }
+    .want-to-build {
+        background-position: bottom;
+    }
+}
+
+/* block newsletter */
+@media (max-width: 48em) {
+    .content-newsletter {
+        width: 26rem;
+        justify-content: center;
+    }
+    .title-newsletter {
+        width: 8rem;
+    }
+    .btn-signup {
+        margin:0;
+    }
+    .signup-post {
+        display: flex;
+        flex-direction: column;
+    }
+    .input-email {
+        width: 12rem;
+        height: 1.9rem;
+    }
+    .btn-signup {
+        width: 7rem;
+        height: 1.9rem;
+    }
+}
+
+/* block footer */
+@media (max-width: 62em) {
+    .title-company {
+        flex-basis: 31%;
+    }
+    .title-links {
+        flex-basis: 38.9%;
+    }
+}
+
+@media (max-width: 48em) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 28rem;
+    }
+    .row-footer-titles {
+        flex-direction: column;
+    }
+    .title-column-footer {
+        font-size: 0.9rem;
+        letter-spacing: 0.1em;
+    }
+    .column-footer-content {
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+    .content-links {
+        justify-content: space-between;
+    }
+    .item-list-links a {
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+    }
+    .address {
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+    }
+    .socials-column {
+        display: flex;
+        align-items: end;
+    }
+    .icon-socials img {
+        height: 1rem;
+    }
+    .title-company {
+        flex-basis: 28%;
+    }
+    .title-links {
+        flex-basis: 36%;
+    }
+    .icon-socials {
+        width: 7rem;
+    }
+}
+
