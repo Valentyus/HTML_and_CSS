@@ -1,0 +1,584 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template: minmax(300px, auto) 1fr minmax(100px,auto) / 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+.header {
+    grid-area: header;
+    background-color: #87509c;
+    display: grid;
+    align-items: center;
+    grid-template: 100px 300px 200px / 1fr;
+}
+.navigation {
+    display: grid;
+    padding: 15px;
+    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 900px) 1fr;
+}
+.header-logo {
+    width: 118px;
+    height: 37px;
+    grid-column: 2 / 3;
+}
+.header-menu {
+    grid-column: 3 / 4;
+}
+.header-list {
+    height: 32px;
+    display: grid;
+    grid-template: 1fr / repeat(5, 80px);
+    grid-auto-flow: column;
+    justify-content: end;
+}
+.header-list li:hover {
+    background-color: #643a79;
+}
+.header-list li {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.header-link {
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.title-header {
+    text-align: center;
+    font-family: 'Titillium Web';
+    font-size: 2.62rem;
+    line-height: 1.14;
+    font-weight: 700;
+    color: #f7f3ea;
+}
+.button-header {
+    justify-self: center;
+    align-self: start;
+}
+.button-header a {
+    width: 18.31rem;
+    height: 4.37rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #eb7d4b;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 7px 0 #b8643d;
+}
+.button-header a:hover {
+    background-color: #e47440;
+    color: #cfc1c1;
+}
+.button-header a:active {
+    top: 5px;
+    box-shadow: 0 0 0 #e47440;
+}
+
+/* MAIN */
+/* section services we provide */
+.services {
+    display: grid;
+    grid-template: 200px 125px 475px / 1fr;
+    background-color: #17c2a4;
+}
+.white-title {
+    padding-top: 30px;
+    font-family: 'Titillium Web';
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.white-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 87px;
+    height: 4px;
+    opacity: 0.14;
+    background-color: #000000;
+}
+.white-subtitle {
+    margin: 0;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+}
+.services-items {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 204px) 240px;
+    column-gap: 80px;
+    justify-content: center;
+}
+.services-item {
+    display: grid;
+    grid-template: auto 1fr minmax(250px, auto) / 1fr;
+}
+.services-image {
+    justify-self: center;
+    align-self: start;
+    text-align: center;
+}
+.services-item:hover img {
+    width: calc(100% + 4px);
+}
+.services-name:hover {
+    color: #cfc1c1;
+}
+.services-name {
+    justify-self: center;
+    align-self: end;
+    font-family: 'Titillium Web';
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+.white-text-site {
+    padding-top: 20px;
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* section beautiful team */
+.beautiful-team {
+    display: grid;
+    grid-template: 200px 100px 600px / 1fr;
+    background-color: #e7f1f8;
+}
+.black-title {
+    font-family: 'Titillium Web';
+    font-size: 41.3px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #3c4761;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+}
+.black-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 87px;
+    height: 4px;
+    opacity: 0.74;
+    background-color: #bdd1df;
+}
+.black-subtitle {
+    font-family: 'Titillium Web';
+    font-size: 18.6px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    margin-top: 0;
+}
+.team-items {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    column-gap: 80px;
+    justify-content: center;
+}
+.team-item {
+    display: grid;
+    grid-template-rows: 220px 40px 30px 200px 40px;
+    justify-items: center;
+}
+.team-item:hover .hover {
+    width: calc(100% + 4px);
+}
+.team-image img {
+    border-radius: 50%;
+}
+.team-item-name {
+    font-family: 'Titillium Web';
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #27283d;
+    justify-self: center;
+    align-self: end;
+}
+.team-item-name:hover {
+    color: #cfc1c1;
+}
+.team-position {
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #30bae7;
+}
+.black-text-site {
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    text-align: center;
+    padding-top: 20px;
+}
+.facebook:hover {
+    content: url("../images/icons/facebook_hover.png");
+    position: relative;
+}
+.twitter:hover {
+    content: url("../images/icons/twitter_hover.png");
+    position: relative;
+}
+.instagram:hover {
+    content: url("../images/icons/instagram_hover.png");
+    position: relative;
+}
+.email:hover {
+    content: url("../images/icons/email_hover.png");
+    position: relative;
+}
+
+/* section scills */
+.scills {
+    display: grid;
+    grid-template: 200px 140px 300px / 1fr;
+    background-color: #ffffff;
+}
+.scills-items {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    column-gap: 80px;
+    justify-content: center;
+}
+.scills-item {
+    display: grid;
+    grid-template-rows: 200px 40px;
+    justify-items: center;
+}
+.scills-item:hover .hover {
+    width: calc(100% + 4px);
+}
+.scills-item-name {
+    font-family: 'Titillium Web';
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+}
+.scills-item-name:hover {
+    color: #cfc1c1;
+}
+
+/* section portfolio */
+.portfolio {
+    display: grid;
+    grid-template: 200px 80px 100px 900px 200px / 1fr;
+    background-color: #ffdd99;
+}
+.portfolio-tabs {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template: 38px / repeat(4, 84px);
+    column-gap: 8px;
+    justify-content: center;
+    align-content: start;
+    justify-items: center;
+    align-items: center;
+}
+.portfolio-tabs li {
+    width: 84px;
+    height: 38px;
+    background-color: rgba(0,0,0,0.07);
+    border-radius: 8px 8px 0 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #393939;
+}
+.portfolio-tabs li:hover {
+    font-size: 20px;
+    background-color: #ffffff;
+}
+.portfolio-columns {
+    display: grid;
+    grid-template: repeat(2, 400px) / repeat(2, 560px);
+    column-gap: 20px;
+    row-gap: 60px;
+    justify-content: center;
+}
+.portfolio-column {
+    display: grid;
+    grid-template-rows: 340px 20px;
+    justify-items: center;
+}
+.portfolio-column:hover img {
+    width: calc(100% + 4px);
+}
+.portfolio-column-link {
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #393939;
+}
+.portfolio-column-link:hover {
+    font-size: 19px;
+    color: #cfc1c1;
+}
+.portfolio-button {
+    display: grid;
+    justify-content: center;
+    align-content: start;
+}
+.portfolio-button a {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 293px;
+    height: 70px;
+    background-color: #17c2a4;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 7px 0 #149e85;
+}
+.portfolio-button a:hover {
+    color: #cfc1c1;
+    background-color: #15b194;
+}
+.portfolio-button a:active {
+    top: 5px;
+    box-shadow: 0 0 0 #15b194;
+}
+
+/* section testimonials */
+.testimonials {
+    display: grid;
+    grid-template: 200px 80px 475px / 1fr;
+    background-color: #d74680;
+}
+.testimonials-columns {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 100px 370px);
+    justify-content: center;
+    column-gap: 40px;
+}
+.testimonials-image img {
+    border-radius: 50%;
+}
+.testimonials-image:hover img {
+    width: calc(100% + 4px);
+}
+.testimonials-text {
+    margin-top: 0;
+    font-family: 'Titillium Web';
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+.testimonial-people {
+    font-family: 'Titillium Web';
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+.testimonial-people:hover {
+    font-size: 24.3px;
+    color: #cfc1c1;
+}
+.position-people {
+    margin-top: 0;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffdd99;
+}
+
+/* section get in touch */
+.get-in-touch {
+    display: grid;
+    grid-template: 200px 100px 500px / 1fr;
+    background-color: #3c5499;
+}
+.form-send {
+    display: grid;
+    grid-template: 56px 200px 100px / repeat(2, 410px);
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 20px;
+    position: relative;
+}
+.decoration {
+    outline: none;
+    border: none;
+    background-color: #273a71;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+}
+.decoration::placeholder {
+    padding-left: 20px;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.5;
+}
+.textarea_messege {
+    width: 860px;
+    height: 200px;
+    resize: none;
+}
+.message {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    background-color: #273a71;
+    position: relative;
+}
+.message::after {
+    content: url("../images/icons/textarea_attribute.png");
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    z-index: 1;
+}
+.textarea_messege::placeholder {
+    padding-top: 20px;
+}
+.send-message-button {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    justify-self: center;
+    align-self: center;
+    width: 280px;
+    height: 70px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #30bae7;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 7px 0 #2387a8;
+}
+.send-message-button:hover {
+    color: #cfc1c1;
+    background-color: #29a7d1;
+}
+.send-message-button:active {
+    top: 5px;
+    box-shadow: 0 0 0 #2387a8;
+}
+
+/* FOOTER */
+.footer {
+    display: grid;
+    grid-template-rows: 112px;
+    justify-content: center;
+    background-color: #344b8e;
+}
+.messengers-link {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template: 1fr / repeat(7, 110px);
+    justify-items: center;
+    align-items: center;
+    font-family: 'Titillium Web';
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.messengers-link a {
+    color: #ffffff;
+}
+.messengers-link a:hover {
+    color: #30bae7;
+}
