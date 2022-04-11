@@ -1,0 +1,214 @@
+/* HEADER */
+@media (max-width: 75em) {
+    .title-banner {
+        letter-spacing: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 62em) {
+  /* burger-menu */
+    .header-list {
+        display: none;
+    }
+    .header-button {
+        display: none;
+    }
+    .header-menu {
+        padding: 0;
+    }
+    .navigation {
+        display: grid;
+        grid-template-columns: minmax(auto, 200px) 1fr 50px;
+    }
+    .header-img-logo {
+        grid-column: 1 / 2;
+    }
+    .header-burger {
+        width: 40px;
+        height: 30px;
+        display: grid;
+        grid-template: repeat(3, 8px);
+        grid-column: 3 / 4;
+        cursor: pointer;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 40px;
+        height: 4px;
+        background-color: #595959;
+        align-self: end;
+    }
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-8px, 7px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(45deg) translate(-8px, -7px);
+    }
+}
+
+@media (max-width: 48em) {
+    .title-banner {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .banner-button a {
+        width: 200px;
+        height: 60px;
+    }
+    .arrows {
+        grid-column: 1 / 2;
+        justify-self: end;
+    }
+}
+
+/* section Our Work */
+@media (max-width: 62em) {
+    .our-work-content {
+        padding: 0 20px;
+        grid-template: 120px 160px auto / 1fr;
+    }
+}
+
+@media (max-width: 48em) {
+    .title-our-work h1 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+}
+
+/* section Brows Project */
+@media (max-width: 62em) {
+    .brows-project {
+        padding: 20px;
+    }
+    .brows-project-content {
+        border-top: 2px solid rgba(192, 192, 192, 0.23);
+    }
+    .tabs-titles {
+        display: none;
+    }
+    .select-tabs {
+        display: block;
+        justify-self: center;
+        align-self: end;
+    }
+    .select-tabs select {
+        width: 10rem;
+        height: 3.0em;
+        border: 0.8px solid #AFB0B9;
+        border-radius: 6px;
+    }
+    .tab-img-content {
+        display: none;
+    }
+    .tab-content {
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+    .title-tab-content {
+        text-align: center;
+    }
+    .text-content {
+        text-align: center;
+    }
+}
+
+/* section Find */
+@media (max-width: 62em) {
+    .find {
+        background: linear-gradient(to bottom, #e2f8ff 50%, #f5f9eb 50%);
+    }
+    .find-columns {
+        grid-template: repeat(2, 240px) / 1fr;
+        justify-items: center;
+    }
+    .column-proporties {
+        justify-self: center;
+    }
+}
+
+/* section Featured Projects */
+@media (max-width: 75em) {
+    .featured-projects-content {
+        grid-template: minmax(auto, 280px) 1fr / minmax(320px, 1fr);
+    }
+    .featured-row-content {
+        grid-template: repeat(3, auto) / 1fr;
+    }
+    .title-row-content {
+        justify-self: center;
+    }
+    .text-content-grid {
+        grid-row: 2 / 3;
+        justify-content: center;
+    }
+    .button-row-content {
+        grid-row: 3 / 4;
+        grid-column: 1 / 1;
+        justify-self: center;
+        align-self: start;
+    }
+    .featured-columns-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+        justify-items: center;
+    }
+}
+
+/* section International Community */
+@media (max-width: 62em) {
+    .international-community {
+        grid-template: 1fr / minmax(auto, 900px);
+    }
+    .title-row-content {
+        text-align: center;
+    }
+    .community-columns-content {
+        padding-top: 50px;
+        display: grid;
+        grid-template: repeat(2, minmax(auto, 1fr)) / 1fr;
+        row-gap: 20px;
+        justify-items: center;
+    }
+    .comment {
+        z-index: 2;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .comment-content {
+        grid-template: 1fr / 1fr;
+    }
+    .comment-content:hover .comment {
+        top: 0px;
+        left: 0px;
+    }
+    .image-user {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .user-name {
+        padding-left: 80px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+
+/* FOOTER */
+@media (max-width: 75em) {
+    .footer {
+        grid-template: 1fr / 1fr;
+    }
+    .partners {
+        flex-wrap: wrap;
+    }
+}
+
+
